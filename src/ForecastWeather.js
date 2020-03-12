@@ -10,7 +10,7 @@ export default function ForecastWeather(props) {
                <div className='card text-center' key={hour.dt_txt}>
                   <div className='card-body pl-0 pr-0'>
                      <p className='mb-0 small light'>{ hour.dt_txt.slice(11,16) }</p>
-                     <img src={ `http://openweathermap.org/img/wn/${ hour.weather[0].icon }@2x.png` } alt='icon' />
+                     <img src={ `https://openweathermap.org/img/wn/${ hour.weather[0].icon }@2x.png` } alt='icon' />
                      <p className='mb-0 mt-0 medium dark'>{ hour.main.temp } °C</p>
                   </div>
                   <div className='card-footer'>

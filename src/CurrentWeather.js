@@ -29,7 +29,7 @@ export default function CurrentWeather(props) {
             <div className='col-6'>
                <div className='row card-body pl-0 pt-0'>
                   <div className='col p-0 img-container'>
-                     <img src={`http://openweathermap.org/img/wn/${ props.current.weather[0].icon }@2x.png`} alt='icon' align='right' />
+                     <img src={`https://openweathermap.org/img/wn/${ props.current.weather[0].icon }@2x.png`} alt='icon' align='right' />
                   </div>
                   <div className='col pt-4 pl-0'>
                      <p className='mt-1 text-right x-large-text dark'>{ props.current.main.temp } °C</p>
