@@ -1,0 +1,52 @@
+body {
+   margin: 0;
+   font-family: Arial;
+
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+   background-color: #F8F9FA;
+}
+
+
+@media screen and (max-width: 319px) {
+   :root {
+      font-size: 8px;
+   }
+}
+
+@media screen and (min-width: 320px) {
+   :root {
+      font-size: 8.6px;
+   }
+}
+
+@media screen and (min-width: 360px) {
+   :root {
+      font-size: 9.5px;
+   }
+}
+
+@media screen and (min-width: 414px) {
+   :root {
+      font-size: 11px;
+   }
+}
+
+@media screen and (min-width: 470px) {
+   :root {
+      font-size: 12.5px;
+   }
+}
+
+@media screen and (min-width: 576px) {
+   :root {
+      font-size: 15px;
+   }
+}
+
+
+@media screen and (min-width: 768px) {
+   :root {
+      font-size: 16px;
+   }
+}

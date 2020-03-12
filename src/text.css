@@ -1,0 +1,37 @@
+.x-large-text {
+   /*font-size: 26pt;*/
+   font-size: 2.1667rem;
+}
+
+.semi-large-text {
+   /*font-size: 23pt;*/
+   font-size: 1.9167rem;
+}
+
+.large-text {
+   /*font-size: 19pt;*/
+   font-size: 1.5833rem
+}
+
+.medium-text {
+   /*font-size: 15pt;*/
+   font-size: 1.25rem;
+}
+
+.small-text {
+   /*font-size: 13pt;*/
+   font-size: 1.0833rem;
+}
+
+.x-small {
+   /*font-size: 10pt;*/
+   font-size: 0.8333rem;
+}
+
+.dark {
+   color: #262626;
+}
+
+.light {
+   color: #70757A;
+}

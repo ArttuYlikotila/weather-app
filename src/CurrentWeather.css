@@ -1,0 +1,9 @@
+.img-container {
+   margin-top: -0.65rem;
+}
+
+@media screen and (min-width: 576px) {
+   .img-container {
+      margin-top: 0;
+   }
+}
