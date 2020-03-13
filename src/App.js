@@ -6,7 +6,6 @@ import Header from './Header';
 import Dropdown from './Dropdown';
 import WeatherInfo from './WeatherInfo';
 import Spinner from './Spinner';
-import { getCurrent, getForecast } from './apiCalls';
 
 const cityIdArray = [658225, 655195, 650225, 634964];
 const apiKey = process.env.REACT_APP_API_KEY;
@@ -44,41 +43,6 @@ export default function App() {
       })
 
       setIsLoading(false);
-
-      /*
-      getCurrent('tampere').then(result => {
-         setCurrentWeather(currentWeather => [...currentWeather, result]);
-      });
-
-      getCurrent('kuopio').then(result => {
-         setCurrentWeather(currentWeather => [...currentWeather, result]);
-      });
-
-      getCurrent('jyvaskyla').then(result => {
-         setCurrentWeather(currentWeather => [...currentWeather, result]);
-      });
-
-      getCurrent('helsinki').then(result => {
-         setCurrentWeather(currentWeather => [...currentWeather, result]);
-      });
-      
-      getForecast('helsinki').then(result => {
-         setForecastWeather(forecastWeather => [...forecastWeather, result]);
-      });
-
-      getForecast('jyvaskyla').then(result => {
-         setForecastWeather(forecastWeather => [...forecastWeather, result]);
-      });
-
-      getForecast('kuopio').then(result => {
-         setForecastWeather(forecastWeather => [...forecastWeather, result]);
-      });
-
-      getForecast('tampere').then(result => {
-         setForecastWeather(forecastWeather => [...forecastWeather, result]);
-         setIsLoading(false);
-      });
-      */
    }, []);
 
    // If there is an error, show error message on screen without rendering other components
