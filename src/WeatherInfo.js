@@ -1,20 +1,22 @@
 import React from 'react';
-import './WeatherInfo.css';
 import CurrentWeather from './CurrentWeather';
 import ForecastWeather from './ForecastWeather';
 
 export default function WeatherInfo(props) {
-   // Function that corrects the spelling in case the city-name is Jyvaskyla
-   function correctSpelling(name) {
-      if (name === 'Jyvaskyla') {
-         name = name.replace(/a/g, 'ä');
+   // Comparing function for the sorting algorithm
+   function sortByName(a, b) {
+      if (a.name < b.name) {
+         return -1;
       }
-      return name;
-   }
+      if (a.name > b.name) {
+         return 1;
+      }
+      return 0;
+   };
 
-   //console.log('Current', props.current, 'Forecast', props.forecast)
-   const cities = props.current.map((city) => {
-      if (props.chosenCity === correctSpelling(city.name) || props.chosenCity === 'Kaikki') {
+   // Sort and map the weather data and return components with correct data based on the city choice of the user
+   const cities = [...props.current].sort(sortByName).map((city) => {
+      if (props.chosenCity === city.name || props.chosenCity === 'Kaikki') {
          return (
             <React.Fragment key={city.name}>
                <CurrentWeather date={props.date} time={props.time} current={city} />

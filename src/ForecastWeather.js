@@ -3,8 +3,10 @@ import './ForecastWeather.css';
 import './text.css';
 
 export default function ForecastWeather(props) {
+   // Map the forecast data to choose the correct weather data set for the current city
    const cards = props.forecast.map((city) => {
       if (props.id === city.city.id) {
+         // Map the hourly forecast data of current city and return elements populated with correct data
          const hourForecast = city.list.map((hour) => {
             return (
                <div className='card text-center' key={hour.dt_txt}>

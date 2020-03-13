@@ -1,7 +1,13 @@
 .app-container {
-   max-width: 90%;
+   max-width: 95%;
    margin-left: auto;
    margin-right: auto;
+}
+
+@media screen and (min-width: 414px) {
+   .app-container {
+      max-width: 90%;
+   }
 }
 
 @media screen and (min-width: 768px) {
