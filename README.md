@@ -2,7 +2,7 @@
 
 This responsive Weather-app is made with Create React App.
 
-Currently this version shows current weather and forecasts of four Finnish cities.
+This version shows current weather and forecasts of four Finnish cities.
 
 ## Installation
 
